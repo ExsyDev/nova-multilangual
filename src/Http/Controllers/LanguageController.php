@@ -30,7 +30,7 @@ class LanguageController extends Controller
 
         $modelClass = $resourceClass::$model;
         $resource = $modelClass::find($request->get("resourceId"));
-        if (!$resource) {`
+        if (!$resource) {
             abort("Missing resource");
         }
 
